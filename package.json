@@ -1,0 +1,30 @@
+{
+    "name": "nuxt-starter",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:bdadam/nuxt-starter.git",
+    "author": "bdadam <me@bdadam.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nuxt",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+        "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+    },
+    "dependencies": {
+        "@nuxtjs/pwa": "^3.0.0-beta.3",
+        "nuxt": "^2.4.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.13.0",
+        "eslint-config-prettier": "^4.0.0",
+        "eslint-plugin-jest": "^22.2.2",
+        "eslint-plugin-prettier": "^3.0.1",
+        "eslint-plugin-vue": "^5.1.0",
+        "node-sass": "^4.11.0",
+        "prettier": "^1.16.4",
+        "sass-loader": "^7.1.0"
+    }
+}
