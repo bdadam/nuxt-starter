@@ -1,0 +1,80 @@
+{
+    "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:jest/recommended", "plugin:vue/essential"],
+    "plugins": ["prettier", "jest", "vue"],
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest/globals": true
+    },
+    "rules": {
+        "prettier/prettier": "error",
+
+        "callback-return": "error",
+        "curly": "error",
+        "no-buffer-constructor": "error",
+        "no-case-declarations": "error",
+        "no-const-assign": "error",
+        "no-eval": "error",
+        "no-eq-null": "error",
+        "no-fallthrough": "error",
+        "no-implicit-globals": "error",
+        "no-implied-eval": "error",
+        "no-invalid-this": "error",
+        "no-loop-func": "error",
+        "no-mixed-requires": "error",
+        "no-new": "error",
+        "no-new-func": "error",
+        "no-new-require": "error",
+        "no-return-assign": "error",
+        "no-return-await": "error",
+        "no-script-url": "error",
+        "no-shadow-restricted-names": "error",
+        "no-use-before-define": "error",
+        "no-useless-computed-key": "error",
+        "no-with": "error",
+        "prefer-const": "error",
+        "prefer-promise-reject-errors": [
+            "error",
+            {
+                "allowEmptyReject": true
+            }
+        ],
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        "radix": "error",
+        "require-await": "error",
+
+        "dot-notation": "warn",
+        "global-require": "warn",
+        "handle-callback-err": "warn",
+        "no-confusing-arrow": "warn",
+        "no-duplicate-imports": "warn",
+        "no-else-return": "warn",
+        "no-shadow": "warn",
+        "no-undef-init": "warn",
+        "no-useless-concat": "warn",
+        "no-useless-constructor": "warn",
+        "no-useless-return": "warn",
+        "object-shorthand": "warn",
+        "prefer-destructuring": "off",
+        "prefer-template": "warn",
+        "symbol-description": "warn",
+
+        "no-console": "off",
+
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+    }
+}
