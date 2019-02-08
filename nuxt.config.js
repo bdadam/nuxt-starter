@@ -5,5 +5,7 @@ export default {
         host: '0.0.0.0',
     },
 
+    css: ['minireset.css', '~/assets/defaults.scss'],
+
     plugins: [{ src: '~plugins/google-analytics.js', mode: 'client' }],
 };

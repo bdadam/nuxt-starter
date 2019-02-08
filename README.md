@@ -68,3 +68,21 @@ Create an `index.vue` file in `src/pages`. This will be the home page.
 ```sh
 npx nuxt
 ```
+
+### Adding default styles
+
+- Install [minireset.css](https://jgthms.com/minireset.css/)
+- Create `defaults.scss` in `src/assets`
+- Add these to `next.config.js`
+
+```sh
+yarn add minireset.css
+```
+
+```js
+// next.config.js
+export default {
+  //...
+  css: ['minireset.css', '~/assets/defaults.scss'],
+};
+```
