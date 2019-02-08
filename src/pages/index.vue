@@ -8,3 +8,9 @@ export default {
     },
 };
 </script>
+<style lang="scss">
+.test {
+    background-color: #a20;
+    color: #fff;
+}
+</style>
