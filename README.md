@@ -1,5 +1,7 @@
 # nuxt-starter
 
+![Sample Application Icon](src/static/icon256.png 'Sample Application Icon')
+
 ## Local setup
 
 ```sh
@@ -84,5 +86,32 @@ yarn add minireset.css
 export default {
   //...
   css: ['minireset.css', '~/assets/defaults.scss'],
+};
+```
+
+### Progressive Web App
+
+- Install [@nuxt/pwa](https://pwa.nuxtjs.org/)
+- Add an icon to `src/static/icon.png`
+- Configure PWA see [@nuxt/pwa](https://pwa.nuxtjs.org/)
+
+```sh
+yarn add @nuxt/pwa
+```
+
+```js
+// next.config.js
+export default {
+  // ...
+  modules: ['@nuxtjs/pwa'],
+
+  manifest: {
+    name: 'My Awesome App',
+    lang: 'en',
+  },
+
+  icon: {
+    iconSrc: 'src/static/icon.png',
+  },
 };
 ```

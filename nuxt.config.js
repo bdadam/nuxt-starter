@@ -8,4 +8,15 @@ export default {
     css: ['minireset.css', '~/assets/defaults.scss'],
 
     plugins: [{ src: '~plugins/google-analytics.js', mode: 'client' }],
+
+    modules: ['@nuxtjs/pwa'],
+
+    manifest: {
+        name: 'My Awesome App',
+        lang: 'en',
+    },
+
+    icon: {
+        iconSrc: 'src/static/icon.png',
+    },
 };

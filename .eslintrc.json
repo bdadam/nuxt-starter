@@ -1,6 +1,6 @@
 {
-    "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:jest/recommended", "plugin:vue/essential"],
-    "plugins": ["prettier", "jest", "vue"],
+    "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:vue/essential"],
+    "plugins": ["prettier", "vue"],
     "parserOptions": {
         "parser": "babel-eslint",
         "ecmaVersion": 2018,
@@ -12,8 +12,7 @@
     "env": {
         "browser": true,
         "node": true,
-        "es6": true,
-        "jest/globals": true
+        "es6": true
     },
     "rules": {
         "prettier/prettier": "error",
@@ -69,12 +68,6 @@
         "prefer-template": "warn",
         "symbol-description": "warn",
 
-        "no-console": "off",
-
-        "jest/no-disabled-tests": "warn",
-        "jest/no-focused-tests": "error",
-        "jest/no-identical-title": "error",
-        "jest/prefer-to-have-length": "warn",
-        "jest/valid-expect": "error"
+        "no-console": "off"
     }
 }
